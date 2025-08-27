@@ -1,0 +1,105 @@
+:root{
+    --cor-objetos-menu: #5A13B4;
+    --cor-objetos-menu-opacidade: rgba(89, 19, 180, 0.3);
+
+    --cor-titulo-sub-texto: #3B1270;
+
+    --cor-transparente: transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.marginSite{
+    margin: 0 10%;
+}
+
+.espacoInterno{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.displayFlex{
+    display: flex;
+    align-items: center;
+}
+
+.alinhamentoFim{
+    align-items: end;
+}
+
+.gap30{
+    gap: 30%;
+}
+
+.gap15{
+    gap:15%;
+}
+
+.gap5{
+    gap: 5%;
+}
+
+h1, h2, p{
+    color: var(--cor-titulo-sub-texto);
+}
+
+h1{
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+/*Header*/
+nav{
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerGraduacaoBlog a{
+    color: var(--cor-objetos-menu);
+    text-decoration: none;
+}
+
+form{
+    border: 1px solid var(--cor-objetos-menu-opacidade);
+    padding: 5px 10px;
+    width: 250px;
+}
+
+input{
+    border: none;
+}
+
+input::placeholder{
+    color: var(--cor-objetos-menu-opacidade);
+}
+
+form button{
+    border: none;
+    background-color: var(--cor-transparente);
+}
+
+.botaoAmbienteVirtual{
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--cor-objetos-menu);
+}
+
+/*Fim Header*/
+
+/*Apresentação*/
+
+.subtituloApresentacao{
+    font-weight: 500;
+    font-size: 8rem;
+    max-width: 860px;
+}
+
+.textoApresentacao{
+    max-width: 255px;
+    font-size: 1.3rem;
+}
+/*Fim Apresentação*/
