@@ -1,16 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --cor-objetos-menu: #5A13B4;
     --cor-objetos-menu-opacidade: rgba(89, 19, 180, 0.3);
 
     --cor-titulo-sub-texto: #3B1270;
+    --cor-texto-branco: #ffffff;
 
     --cor-transparente: transparent;
+
+    --cor-background-retangulo: #3B1270;
+
+    --cor-destaque: #8E35FF;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
 }
 
 .marginSite{
@@ -39,8 +50,16 @@
     gap:15%;
 }
 
+.gap10{
+    gap: 10%;
+}
+
 .gap5{
     gap: 5%;
+}
+
+.gap3{
+    gap: 3%;
 }
 
 h1, h2, p{
@@ -93,8 +112,8 @@ form button{
 /*Apresentação*/
 
 .subtituloApresentacao{
-    font-weight: 500;
-    font-size: 8rem;
+    font-weight: 400;
+    font-size: 6.5rem;
     max-width: 860px;
 }
 
@@ -103,3 +122,100 @@ form button{
     font-size: 1.3rem;
 }
 /*Fim Apresentação*/
+
+/*Escolha seu Curso*/
+.corFundo{
+    background-color: var(--cor-background-retangulo);
+}
+
+.posicaoPersonagem{
+    position: relative;
+    top: -4.4vw;
+}
+
+.tituloEscolhaCarreira{
+    color: var(--cor-texto-branco);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.containerNomeCurso{
+    background-color: rgba(255,255,255,0.3);
+    padding: 2%;
+    min-width: 520px;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+.containerNomeCurso p, .containerNomeCurso h3{
+    color: var(--cor-texto-branco);
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.containerBotoesCurso{
+    flex-wrap: nowrap;
+}
+
+.containerBotoesCurso button{
+    padding: 0;
+    margin: 0;
+    background-color: var(--cor-transparente);
+    border: none;
+    
+}
+
+.containerBotoesCurso button:hover{
+    cursor: pointer;
+}
+
+.imgBotao{
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+.tituloSoftSkills{
+    color: var(--cor-texto-branco);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.containerSoftSkills{
+    margin-top: 2vw;
+}
+
+.nomeSoftSkills{
+    color: var(--cor-texto-branco);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.marginSoftSkills{
+    margin: 0.7vw 0;
+}
+
+/*Fim Escolha seu Curso*/
+
+/*Inscrever-se*/
+.botaoInscreverSe{
+    width: 85%;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto-branco);
+    padding: 1.5vw;
+    border: none;
+    font-size: 1.8rem;
+    position: relative;
+    top: -2.5vw;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #212212;
+}
+/*Fim Inscrever-se*/
+
+/*Cursos Gratuitos*/
+.tituloCursosGratuitos{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2vw 0;
+}
+/*Fim Cursos Gratuitos*/
