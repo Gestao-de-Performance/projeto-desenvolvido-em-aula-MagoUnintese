@@ -1,37 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<<<<<<< Updated upstream
-    <head>
-        <!-- Comentário -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="https://google.com.br" target="_blank">Google</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <section>
-                <h1>Escola de Programadores</h1>
-                <div>
-                    <h2>Aprendendo HTML</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia rem deserunt suscipit <strong>repellendus</strong> assumenda. Soluta amet recusandae, modi nobis cumque accusantium quaerat minima odio, deleniti eos, <span style="font-size: 1.5rem;">cum accusamus fuga debitis</span>.</p>
-                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vero amet tempore adipisci fugiat mollitia nisi ipsa soluta, debitis omnis voluptatem laudantium iusto quidem perferendis earum maiores illum animi velit?</span>
-=======
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header class="marginSite">
         <nav class="displayFlex">
@@ -40,69 +14,191 @@
                 <div class="displayFlex gap15 containerGraduacaoBlog">
                     <a href="#">Graduação</a>
                     <a href="#">Blog</a>
->>>>>>> Stashed changes
                 </div>
-                <div>
-                    <h2>Aprendendo CSS</h2>
-                    <ul>
-                        <li>Peso de Fonte</li>
-                        <li>Cor da fonte</li>
-                        <li>Cor do fundo</li>
-                        <li>Margin</li>
-                    </ul>
+            </div>
+            <div class="displayFlex gap15">
+                <form class="displayFlex">
+                    <input placeholder="Buscar">
+                    <button><img src="img/lupa.svg" alt="Lupa"></button>
+                </form>
+                <a class="botaoAmbienteVirtual" href="#"><img src="img/cadeado.svg" alt="Cadeado">&nbsp;Ambiente Virtual</a>
+            </div>
+        </nav>
+    </header>
 
-                    <ol>
-                        <li>Margin</li>
-                        <li>Padding</li>
-                        <li>Background Color</li>
-                        <li>Width</li>
-                    </ol>
+    <main>
+        <!--Apresentação-->
+        <section class="marginSite espacoInterno">
+            <h1>Nós somos uma <b>faculdade digital</b></h1>
+            <div class="displayFlex alinhamentoFim gap5">
+                <h2 class="subtituloApresentacao">Você, preparado para <b>o futuro.</b></h2>
+                <img class="setaAmarela" src="img/seta-amarela.png">
+                <p class="textoApresentacao">Se preparar para o mercado é uma coisa, prosperar nele é outra. <b>Nossa graduação te ajuda com as duas.</b></p>
+            </div>
+        </section>
+
+        <!--Escolha o Curso-->
+        <section class="corFundo">
+            <div class="marginSite displayFlex gap3">
+                <img class="posicaoPersonagem tamanhoMobile" src="img/personagem.jpg">
+                <div class="containerEscolhaCarreira">
+                    <h2 class="tituloEscolhaCarreira">Escolha sua carreira</h2>
+                    <div class="containerNomeCurso displayFlex gap3">
+                        <p>Graduação</p>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <div class="displayFlex containerBotoesCurso gap15">
+                            <button><img class="imgBotao" src="img/seta-esquerda.svg"></button>
+                            <button><img class="imgBotao" src="img/seta-direita.svg"></button>
+                        </div>
+                    </div>
+                    <h3 class="tituloSoftSkills">Soft Skills que você irá desenvolver:</h3>
+                    <div class="displayFlex gap10 containerSoftSkills">
+                        <div>
+                            <div>
+                                <h4 class="nomeSoftSkills">Criatividade</h4>
+                                <div>
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                </div>
+                            </div>
+                            <div class="marginSoftSkills">
+                                <h4 class="nomeSoftSkills">Liderança</h4>
+                                <div>
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="nomeSoftSkills">Gerenciamento de Tempo</h4>
+                                <div>
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h4 class="nomeSoftSkills">Inovação</h4>
+                                <div>
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                </div>
+                            </div>
+                            <div class="marginSoftSkills">
+                                <h4 class="nomeSoftSkills">Comunicação</h4>
+                                <div>
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="nomeSoftSkills">Habilidade Interpessoal</h4>
+                                <div>
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_cheia.png" alt="Estrela Cheia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                    <img src="img/estrela_vazia.png" alt="Estrela Vazia">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        <section class="marginSite">
+            <button class="botaoInscreverSe">INSCREVER-SE</button>
+        </section>
 
-            <section>
-                <div>
-                    <img width="555px" height="542px" src="img/gestao_performance.png" alt="Imagem de tês pessoas, sendo duas mulheres e um homem.">
-                    <form>
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" placeholder="Nome">
+        <section class="marginSite">
+            <h2 class="tituloCursosGratuitos">Cursos <b>livres e gratuitos</b> para você</h2>
+            <div class="displayFlex">
+                <a href="#"><h2><img class="tamanhoMobile" src="img/lideranca.jpg" alt="Curso Gratuito de Liderança"></h2></a>
+                <a href="#"><h2><img class="tamanhoMobile" src="img/cargos_e_salarios.jpg" alt="Curso Gratuito sobre Cargos e Salários"></h2></a>
+            </div>
+        </section>
 
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email">
+        <section class="marginSite">
+            <h2 class="tituloBlog">Mais recentes em nosso <b class="corDestaqueBlog">blog</b></h2>
+            <div class="displayFlex containerPost gap5">
+                <a class="tamanhoPost removeUnderline sombraPost" href="#">
+                    <img class="tamanhoMobile" src="img/post1.png" alt="Imagem Post 1">
+                    <div class="containerTituloPost">
+                        <h3>Afinal, o que é gestão de performance?</h3>
+                        <div class="displayFlex containerTemaTempoPost">
+                            <h4>Business</h4>
+                            <p>6 minutos de leitura</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="tamanhoPost removeUnderline sombraPost" href="#">
+                    <img class="tamanhoMobile" src="img/post2.png" alt="Imagem Post 2">
+                    <div class="containerTituloPost">
+                        <h3>O que fazer depois da faculdade? 4 dicas práticas</h3>
+                        <div class="displayFlex containerTemaTempoPost">
+                            <h4>Estudos</h4>
+                            <p>8 minutos de leitura</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="tamanhoPost removeUnderline sombraPost" href="#">
+                    <img class="tamanhoMobile" src="img/post3.png" alt="Imagem Post 3">
+                    <div class="containerTituloPost">
+                        <h3>7 filmes que todo estudante de Gestão de TI deveria assistir</h3>
+                        <div class="displayFlex containerTemaTempoPost">
+                            <h4>Entretenimento</h4>
+                            <p>3 minutos de leitura</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
 
-                        <button type="submit">Enviar</button>
-                    </form>
-
-                    <table>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Idade</th>
-                            <th>Altura</th>
-                        </tr>
-                        <tr>
-                            <td>Mago</td>
-                            <td>XXXX</td>
-                            <td>1.75</td>
-                        </tr>
-                        <tr>
-                            <td>Carlos Tostes</td>
-                            <td>27</td>
-                            <td>1.80</td>
-                        </tr>
-                        <tr>
-                            <td>Mauricio Gonçalves</td>
-                            <td>25</td>
-                            <td>1.70</td>
-                        </tr>
-                    </table>
+    <footer>
+        <div class="displayFlex containerFooter gap5">
+            <div class="containerLogoContatos">
+                <a href="#">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <div class="containerContatos displayFlex gap10">
+                    <a href="#">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#">
+                        <img src="img/twitter.png" alt="Twitter">
+                    </a>
+                    <a href="#">
+                        <img src="img/linkedin.png" alt="Linkedin">
+                    </a>
+                    <a href="#">
+                        <img src="img/whatsapp.png" alt="WhatsApp">
+                    </a>
                 </div>
-            </section>
+            </div>
+            <a href="#">
+                <img src="img/qr_code.png" alt="QR Code">
+            </a>
+        </div>
+    </footer>
 
-
-        </main>
-
-        <footer>
-            
-        </footer>
-    </body>
+</body>
 </html>

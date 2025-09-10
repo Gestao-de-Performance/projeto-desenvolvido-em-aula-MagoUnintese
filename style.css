@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-objetos-menu: #5A13B4;
+    --cor-objetos-menu-opacidade: rgba(89, 19, 180, 0.3);
+
+    --cor-titulo-sub-texto: #3B1270;
+    --cor-texto-branco: #ffffff;
+
+    --cor-transparente: transparent;
+
+    --cor-background-retangulo: #3B1270;
+    --cor-background-footer: #DED0F1;
+
+    --cor-destaque: #8E35FF;
+
+    --cor-tema-post: #CC7F0B;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.marginSite{
+    margin: 0 10%;
+}
+
+.espacoInterno{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.displayFlex{
+    display: flex;
+    align-items: center;
+}
+
+.alinhamentoFim{
+    align-items: end;
+}
+
+.gap30{
+    gap: 30%;
+}
+
+.gap15{
+    gap:15%;
+}
+
+.gap10{
+    gap: 10%;
+}
+
+.gap5{
+    gap: 5%;
+}
+
+.gap3{
+    gap: 3%;
+}
+
+h1, h2, p{
+    color: var(--cor-titulo-sub-texto);
+}
+
+h1{
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width: 1024px){
+    .displayFlex{
+        flex-wrap: wrap;
+    }
+
+    .gap30{
+        gap: 60px;
+    }
+
+    .gap15{
+        gap: 30px;
+    }
+
+    .gap10{
+        gap: 20px;
+    }
+
+    .gap5{
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 1.2rem;
+    }
+
+    .marginSite {
+        margin: 0 3%;
+    }
+
+    .gap30{
+        gap: 15px;
+    }
+
+    .gap15{
+        gap: 15px;
+    }
+
+    .tamanhoMobile{
+        width: 100%;
+    }
+}
+
+/*Header*/
+nav{
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerGraduacaoBlog a{
+    color: var(--cor-objetos-menu);
+    text-decoration: none;
+}
+
+form{
+    border: 1px solid var(--cor-objetos-menu-opacidade);
+    padding: 5px 10px;
+    width: 250px;
+}
+
+input{
+    border: none;
+}
+
+input::placeholder{
+    color: var(--cor-objetos-menu-opacidade);
+}
+
+form button{
+    border: none;
+    background-color: var(--cor-transparente);
+}
+
+.botaoAmbienteVirtual{
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--cor-objetos-menu);
+}
+/*Fim Header*/
+
+/*Apresentação*/
+
+.subtituloApresentacao{
+    font-weight: 400;
+    font-size: 6.5rem;
+    max-width: 860px;
+}
+
+.textoApresentacao{
+    max-width: 255px;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 1024px){
+    .subtituloApresentacao{
+        font-size: 4.5rem;
+    }
+
+    .setaAmarela{
+        display: none;
+    }
+
+    .textoApresentacao {
+        max-width: 380px;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .espacoInterno{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .subtituloApresentacao {
+        font-size: 2.5rem;
+    }
+
+    .textoApresentacao {
+        font-size: 1.1rem;
+    }
+}
+/*Fim Apresentação*/
+
+/*Escolha seu Curso*/
+.corFundo{
+    background-color: var(--cor-background-retangulo);
+}
+
+.posicaoPersonagem{
+    position: relative;
+    top: -4.4vw;
+}
+
+.tituloEscolhaCarreira{
+    color: var(--cor-texto-branco);
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.containerNomeCurso{
+    background-color: rgba(255,255,255,0.3);
+    padding: 2%;
+    min-width: 520px;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+}
+
+.containerNomeCurso p, .containerNomeCurso h3{
+    color: var(--cor-texto-branco);
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.containerBotoesCurso{
+    flex-wrap: nowrap;
+}
+
+.containerBotoesCurso button{
+    padding: 0;
+    margin: 0;
+    background-color: var(--cor-transparente);
+    border: none;
+    
+}
+
+.containerBotoesCurso button:hover{
+    cursor: pointer;
+}
+
+.imgBotao{
+    display: block;
+    width: 20px;
+    height: auto;
+}
+
+.tituloSoftSkills{
+    color: var(--cor-texto-branco);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.containerSoftSkills{
+    margin-top: 2vw;
+}
+
+.nomeSoftSkills{
+    color: var(--cor-texto-branco);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.marginSoftSkills{
+    margin: 0.7vw 0;
+}
+
+@media screen and (max-width: 1024px){
+    .posicaoPersonagem {
+        top: -6vw;
+    }
+
+    .containerEscolhaCarreira{
+        position: relative;
+        top: -3.5vw;
+    }
+
+    .containerNomeCurso{
+        justify-content: center;
+    }
+
+    .imgBotao {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .containerNomeCurso {
+        min-width: 0px;
+    }
+
+    .tituloEscolhaCarreira {
+        font-size: 1.7rem;
+    }
+}
+/*Fim Escolha seu Curso*/
+
+/*Inscrever-se*/
+.botaoInscreverSe{
+    width: 85%;
+    background-color: var(--cor-destaque);
+    color: var(--cor-texto-branco);
+    padding: 1.5vw;
+    border: none;
+    font-size: 1.8rem;
+    position: relative;
+    top: -2.5vw;
+    cursor: pointer;
+    box-shadow: 0 5px 20px #212212;
+}
+
+@media screen and (max-width: 767px){
+    .botaoInscreverSe{
+        width: 100%;
+    }
+}
+/*Fim Inscrever-se*/
+
+/*Cursos Gratuitos*/
+.tituloCursosGratuitos{
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 2vw 0;
+}
+
+@media screen and (max-width: 767px){
+   .tituloCursosGratuitos{
+        font-size: 1.7rem;
+    } 
+}
+/*Fim Cursos Gratuitos*/
+
+/*Blog*/
+.containerPost{
+    margin-top: 3%;
+}
+
+.tituloBlog{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.corDestaqueBlog{
+    color: var(--cor-destaque);
+}
+
+.tamanhoPost{
+    max-width: 340px;
+}
+
+.removeUnderline{
+    text-decoration: none;
+}
+
+.sombraPost{
+    box-shadow: 0px 0px 15px #212121;
+}
+
+.containerTituloPost{
+    padding: 13px;
+}
+
+.containerTituloPost h3{
+    color: var(--cor-titulo-sub-texto);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.containerTemaTempoPost{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.containerTemaTempoPost h4{
+    color: var(--cor-tema-post);
+    font-style: italic;
+}
+
+@media screen and (max-width: 1024px){
+    .containerPost {
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .tituloBlog {
+        font-size: 1.7rem;
+    }
+
+    .tamanhoPost {
+        max-width: 320px;
+    }
+}
+/*Fim Blog*/
+
+/*Footer*/
+footer{
+    background-color: var(--cor-background-footer);
+    margin-top: 3%;
+    padding: 5vw;
+}
+
+.containerFooter{
+    justify-content: center;
+}
+
+.containerLogoContatos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+@media screen and (max-width: 1024px){
+    footer {
+        margin-top: 5%;
+    }
+
+    .containerContatos a{
+        scale: 1.3;
+    }
+}
+/*Fim Footer*/
